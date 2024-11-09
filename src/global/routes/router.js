@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import DefaultLayout from "../layouts/DefaultLayout";
+import { QuadraticContainer } from "../../features/quadratic";
 
 const router = createBrowserRouter([
     {
@@ -8,7 +9,7 @@ const router = createBrowserRouter([
         children: [
             {
                 index: true,
-                element: <h1>Quadratic...</h1>
+                element: <QuadraticContainer />
             }
         ]
     }
