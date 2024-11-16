@@ -3,7 +3,9 @@ import CoeInput from '../coeInput/CoeInput';
 import QuadOutput from '../quadOutput/QuadOutput';
 import * as style from './quadratic.module.css';
 
-const Quadratic = ({ a, b, c, D, x1, x2 }) => {
+const Quadratic = ({quadValues, dispatch}) => {
+
+    const { a, b, c, D, x1, x2 } = quadValues;
 
     return (
         <div className={`${style.quadratic}`}>
@@ -15,15 +17,9 @@ const Quadratic = ({ a, b, c, D, x1, x2 }) => {
                     defA={a}
                     defB={b}
                     defC={c}
+                    dispatch={dispatch}
                 />
-                <QuadOutput
-                    a={a}
-                    b={b}
-                    c={c}
-                    D={D}
-                    x1={x1}
-                    x2={x2}
-                />
+                <QuadOutput quadValues={quadValues} />
 
             </div>
         </div>

@@ -16,7 +16,7 @@ const QuadraticEquation = ({a='a', b='b', c='c', D}) => {
             { output: 'mathml' }
         );
 
-    }, []);
+    }, [a, b, c, D]);
 
     return (
         <span ref={quadEquation} />

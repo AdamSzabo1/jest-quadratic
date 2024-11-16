@@ -2,7 +2,9 @@ import QuadraticEquation from "../quadraticEquation/QuadraticEquation";
 
 import * as style from './quad-output.module.css';
 
-const QuadOutput = ({ a, b, c, D, x1, x2 }) => {
+const QuadOutput = ({quadValues}) => {
+
+    const { a, b, c, D, x1, x2 } = quadValues;
 
     return (
         <div className={style['quad-output']} >

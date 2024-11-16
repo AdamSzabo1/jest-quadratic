@@ -1,10 +1,23 @@
 
 import * as style from './coe-input.module.css';
 
-const CoeInput = ({defA, defB, defC}) => {
+const CoeInput = ({defA, defB, defC, dispatch}) => {
 
     const onSolve = (event) => {
         event.preventDefault();
+
+        const formData = new FormData(event.target);
+
+        const formValues = Array.from( formData.entries());
+
+        const formObj = formValues.reduce((acc, item) => {
+
+            acc[item[0]] = +item[1];
+            
+            return acc;
+        }, {});
+
+        dispatch({ type: 'calculate', payload: formObj })
     }
 
     return (
@@ -13,17 +26,17 @@ const CoeInput = ({defA, defB, defC}) => {
 
             <div>
                 <label htmlFor="coe-a">a: </label>
-                <input type="number" name="" id="coe-a" defaultValue={defA} />
+                <input type="number" name="a" id="coe-a" defaultValue={defA} />
             </div>
 
             <div>
                 <label htmlFor="coe-b">b: </label>
-                <input type="number" name="" id="coe-b" defaultValue={defB} />
+                <input type="number" name="b" id="coe-b" defaultValue={defB} />
             </div>
 
             <div>
                 <label htmlFor="coe-c">c: </label>
-                <input type="number" name="" id="coe-c" defaultValue={defC} />
+                <input type="number" name="c" id="coe-c" defaultValue={defC} />
             </div>
 
             <button type="submit">Solve</button>
