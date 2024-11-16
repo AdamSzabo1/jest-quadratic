@@ -4,7 +4,14 @@ const QuadraticContainer = () => {
 
     return (
         <div>
-            <Quadratic />
+            <Quadratic
+                a={1}
+                b={8}
+                c={-48}
+                D={256}
+                x1={4}
+                x2={-12}
+            />
         </div>
     );
 }

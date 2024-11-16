@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Quadratic snapshot min should match previous snapshot without KaTeX 1`] = `
+<DocumentFragment>
+  <div
+    class="undefined"
+  >
+    <h1
+      data-testid="quadratic-heading"
+    >
+      Quadratic Equation
+    </h1>
+    <div
+      class="undefined"
+    >
+      <form>
+        <h2>
+          Input
+        </h2>
+        <div>
+          <label
+            for="coe-a"
+          >
+            a: 
+          </label>
+          <input
+            id="coe-a"
+            name=""
+            type="number"
+            value="1"
+          />
+        </div>
+        <div>
+          <label
+            for="coe-b"
+          >
+            b: 
+          </label>
+          <input
+            id="coe-b"
+            name=""
+            type="number"
+            value="8"
+          />
+        </div>
+        <div>
+          <label
+            for="coe-c"
+          >
+            c: 
+          </label>
+          <input
+            id="coe-c"
+            name=""
+            type="number"
+            value="-48"
+          />
+        </div>
+        <button
+          type="submit"
+        >
+          Solve
+        </button>
+      </form>
+      <div>
+        <h2>
+          Solution
+        </h2>
+        <span />
+        <span />
+        <span />
+        <span>
+          x1 = 4
+        </span>
+        <span>
+          x2 = -12
+        </span>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
