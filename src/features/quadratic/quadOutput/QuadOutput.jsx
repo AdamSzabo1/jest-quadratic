@@ -12,10 +12,14 @@ const QuadOutput = ({quadValues}) => {
             <QuadraticEquation />
             <QuadraticEquation a={a} b={b} c={c} />
             <QuadraticEquation a={a} b={b} c={c} D={D} />
-            <span>x1 = {x1}</span>
+            <span>x1 = 
+                <span data-testid="root-x1">{x1}</span>
+            </span>
             {
                 x2 !== undefined
-                ? <span>x2 = {x2}</span>
+                ?   <span>x2 = 
+                        <span data-testid="root-x2">{x2}</span>
+                    </span>
                 : null
             }
             

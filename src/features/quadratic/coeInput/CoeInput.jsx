@@ -26,20 +26,20 @@ const CoeInput = ({defA, defB, defC, dispatch}) => {
 
             <div>
                 <label htmlFor="coe-a">a: </label>
-                <input type="number" name="a" id="coe-a" defaultValue={defA} />
+                <input type="number" name="a" data-testid="coe-a" id="coe-a" defaultValue={defA} />
             </div>
 
             <div>
                 <label htmlFor="coe-b">b: </label>
-                <input type="number" name="b" id="coe-b" defaultValue={defB} />
+                <input type="number" name="b" data-testid="coe-b" id="coe-b" defaultValue={defB} />
             </div>
 
             <div>
                 <label htmlFor="coe-c">c: </label>
-                <input type="number" name="c" id="coe-c" defaultValue={defC} />
+                <input type="number" name="c" data-testid="coe-c" id="coe-c" defaultValue={defC} />
             </div>
 
-            <button type="submit">Solve</button>
+            <button data-testid="solve-btn" type="submit">Solve</button>
         </form>
     );
 }

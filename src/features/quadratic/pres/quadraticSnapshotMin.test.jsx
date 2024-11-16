@@ -15,12 +15,11 @@ describe('Quadratic snapshot min', () => {
 
         const { asFragment } = render(
             <Quadratic
-                a={1}
-                b={8}
-                c={-48}
-                D={256}
-                x1={4}
-                x2={-12}
+                quadValues={
+                    { a: 1, b: 8, c: -48,
+                      D: 256, x1: 4, x2: -12 }
+                }
+                dispatch={() => {}}
             />
         );
 

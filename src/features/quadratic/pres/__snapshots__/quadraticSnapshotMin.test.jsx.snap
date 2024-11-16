@@ -24,8 +24,9 @@ exports[`Quadratic snapshot min should match previous snapshot without KaTeX 1`]
             a: 
           </label>
           <input
+            data-testid="coe-a"
             id="coe-a"
-            name=""
+            name="a"
             type="number"
             value="1"
           />
@@ -37,8 +38,9 @@ exports[`Quadratic snapshot min should match previous snapshot without KaTeX 1`]
             b: 
           </label>
           <input
+            data-testid="coe-b"
             id="coe-b"
-            name=""
+            name="b"
             type="number"
             value="8"
           />
@@ -50,13 +52,15 @@ exports[`Quadratic snapshot min should match previous snapshot without KaTeX 1`]
             c: 
           </label>
           <input
+            data-testid="coe-c"
             id="coe-c"
-            name=""
+            name="c"
             type="number"
             value="-48"
           />
         </div>
         <button
+          data-testid="solve-btn"
           type="submit"
         >
           Solve
@@ -70,10 +74,20 @@ exports[`Quadratic snapshot min should match previous snapshot without KaTeX 1`]
         <span />
         <span />
         <span>
-          x1 = 4
+          x1 =
+          <span
+            data-testid="root-x1"
+          >
+            4
+          </span>
         </span>
         <span>
-          x2 = -12
+          x2 =
+          <span
+            data-testid="root-x2"
+          >
+            -12
+          </span>
         </span>
       </div>
     </div>
