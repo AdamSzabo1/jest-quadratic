@@ -15,8 +15,22 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.module\.css$/,
+                use: [
+                    "style-loader",
+                    {
+                        loader: "css-loader",
+                        options: {
+                            importLoaders: 1,
+                            modules: true,
+                        },
+                    }
+                ],
+            },
+            {
                 test: /\.css$/,
                 use: ["style-loader", "css-loader"],
+                exclude: /\.module\.css$/,
             },
             {
                 test: /\.(gif|jpg|jpeg)$/,

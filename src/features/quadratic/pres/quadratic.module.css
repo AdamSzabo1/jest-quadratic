@@ -1,0 +1,11 @@
+
+.quadratic h1 {
+    text-align: center;
+}
+
+.quadratic .io-area {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-around;
+}
